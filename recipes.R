@@ -2,5 +2,27 @@
 recipes <- list(financier = data.frame(ingredients = c("batch", "butter", "almond flour", "AP flour", "confectioners sugar", "egg whites"),
                                        weights = c(1, 250, 100, 100, 295, 245)),
                 gianduja= data.frame(ingredients = c("batch", "nut paste", "chocolate"), 
-                                     weights = c(1, 357, 642)))
+                                     weights = c(1, 357, 642)), 
+                pate_de_fruits_strawberry = data.frame(ingredients = c("batch", 
+                                                                       "strawberry puree", 
+                                                                       "sugar",
+                                                                       "corn syrup", 
+                                                                       "citric acid",
+                                                                       "pectin"), 
+                                                       weights = c(1, 1000, 1100, 200, 15, 25)), 
+                pate_de_fruits_apricot = data.frame(ingredients = c("batch", 
+                                                                       "apricot puree", 
+                                                                       "sugar",
+                                                                       "corn syrup", 
+                                                                       "citric acid",
+                                                                       "pectin"), 
+                                                       weights = c(1, 1000, 1140, 250, 14, 24)), 
+                pate_de_fruits_lychee= data.frame(ingredients = c("batch", 
+                                                                       "lychee puree", 
+                                                                       "sugar",
+                                                                       "corn syrup", 
+                                                                       "citric acid",
+                                                                       "pectin"), 
+                                                       weights = c(1, 1000, 1100, 200, 15, 25))
+)
 

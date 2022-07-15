@@ -33,7 +33,7 @@ bake <- function(chosen_recipe = NA, limiting_ingredient = NA, amount_to_modify 
                       paste(recipe$ingredients, collapse = "\n ")))
           } else {
             weight_ratio <- recipe$weights / recipe$weights[input_index]
-            adjusted_weights <- round(weight_ratio*amount_to_modify, 0)
+            adjusted_weights <- round(weight_ratio*amount_to_modify, 1)
             new_recipe <- data.frame(ingredients = recipe$ingredients, adjusted_weights)
             return(new_recipe)
           }
