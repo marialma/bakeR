@@ -4,11 +4,16 @@ list_recipes <- function(){
   names(recipes)
 }
 
-bake <- function(chosen_recipe, limiting_ingredient = NA, amount_to_modify = NA) {
+bake <- function(chosen_recipe = NA, limiting_ingredient = NA, amount_to_modify = NA) {
+  if(is.na(chosen_recipe)) {
+    message("Pleease choose from available recipes:")
+    cat(paste(names(recipes), collapse = "\n"))
+  } else{
   recipe_index <- match(chosen_recipe, names(recipes))
   if(is.na(recipe_index)) { 
     message("Please choose from available recipes:")
-    cat(paste(names(recipes), collapse = "\n"))} else{
+    cat(paste(names(recipes), collapse = "\n"))
+    } else{
       
       recipe <- recipes[[recipe_index]]
       
@@ -35,5 +40,6 @@ bake <- function(chosen_recipe, limiting_ingredient = NA, amount_to_modify = NA)
         }
       }
     }
+  }
 }
 
