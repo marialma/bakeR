@@ -6,7 +6,7 @@ list_recipes <- function(){
 
 bake <- function(chosen_recipe = NA, limiting_ingredient = NA, amount_to_modify = NA) {
   if(is.na(chosen_recipe)) {
-    message("Pleease choose from available recipes:")
+    message("Please choose from available recipes:")
     cat(paste(names(recipes), collapse = "\n"))
   } else{
   recipe_index <- match(chosen_recipe, names(recipes))
