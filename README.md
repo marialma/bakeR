@@ -26,3 +26,4 @@ Cook times are not given because they may change as the recipe volumes change. U
 * add information about where recipes came from
 * include ability for user to add their own recipes
 * add a way to search recipes? 
+* turn into package
